@@ -17,7 +17,29 @@
 
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
-    <Content Remove="ClientApp\**" />
+    <Content Remove="src\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="src\app\header\header.component.ts" />
+    <None Remove="src\app\header\header.module.ts" />
+    <None Remove="src\app\header\main-header\main-header.component.ts" />
+    <None Remove="src\app\header\top-header\top-header.component.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\dist\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\euromade.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="src\app\header\header.component.ts" />
+    <TypeScriptCompile Include="src\app\header\header.module.ts" />
+    <TypeScriptCompile Include="src\app\header\main-header\main-header.component.ts" />
+    <TypeScriptCompile Include="src\app\header\top-header\top-header.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

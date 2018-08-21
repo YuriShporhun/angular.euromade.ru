@@ -1,0 +1,9 @@
+﻿.header-container {
+    padding: 20px 0;
+    background: #eee;
+}
+
+.search-input {
+    color: #323539;
+    height: 50px;
+}
