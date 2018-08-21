@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
+import { AsideModule } from './aside/aside.module';
 
 @NgModule({
     declarations: [
@@ -13,6 +14,7 @@ import { HeaderModule } from './header/header.module';
     ],
     imports: [
         HeaderModule,
+        AsideModule,
         CommonModule,
         HttpModule,
         FormsModule,
