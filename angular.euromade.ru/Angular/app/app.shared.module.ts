@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
 import { AsideModule } from './aside/aside.module';
 import { FooterModule } from './footer/footer.module';
+import { MainPageComponent } from './routes/main-page/main-page.component';
+import { RoutesModule } from './routes/routes.module';
 
 @NgModule({
     declarations: [
@@ -17,13 +19,14 @@ import { FooterModule } from './footer/footer.module';
         HeaderModule,
         AsideModule,
         FooterModule,
+        RoutesModule,
         CommonModule,
         HttpModule,
         FormsModule,
         RouterModule.forRoot([
-            { path: '', redirectTo: 'home', pathMatch: 'full' },
-            //{ path: 'home', component: HomeComponent },
-            { path: '**', redirectTo: 'home' }
+            { path: '', redirectTo: 'main-page', pathMatch: 'full' },
+            { path: 'main-page', component: MainPageComponent },
+            { path: '**', redirectTo: 'main-page' }
         ])
     ]
 })

@@ -28,10 +28,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Angular\app\routes\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="wwwroot\euromade.svg" />
   </ItemGroup>
 
