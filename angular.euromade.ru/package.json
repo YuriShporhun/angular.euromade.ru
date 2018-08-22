@@ -5,6 +5,9 @@
   "scripts": {
     "test": "karma start src/test/karma.conf.js"
   },
+  "dependencies": {
+    "normalize.css": "8.0.0"
+  },
   "devDependencies": {
     "@angular/animations": "4.2.5",
     "@angular/common": "4.2.5",
@@ -26,7 +29,6 @@
     "aspnet-prerendering": "^3.0.1",
     "aspnet-webpack": "^2.0.1",
     "awesome-typescript-loader": "3.2.1",
-    "bootstrap": "3.3.7",
     "chai": "4.0.2",
     "css": "2.2.1",
     "css-loader": "0.28.4",
@@ -38,7 +40,6 @@
     "html-loader": "0.4.5",
     "isomorphic-fetch": "2.2.1",
     "jasmine-core": "2.6.4",
-    "jquery": "3.2.1",
     "json-loader": "0.5.4",
     "karma": "1.7.0",
     "karma-chai": "0.1.0",

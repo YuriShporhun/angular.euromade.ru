@@ -29,7 +29,7 @@ module.exports = (env) => {
     // Configuration for client-side bundle suitable for running in browsers
     const clientBundleOutputDir = './wwwroot/dist';
     const clientBundleConfig = merge(sharedConfig, {
-        entry: { 'main-client': './src/boot.browser.ts' },
+        entry: { 'main-client': './Angular/boot.browser.ts' },
         output: { path: path.join(__dirname, clientBundleOutputDir) },
         plugins: [
             new webpack.DllReferencePlugin({
@@ -47,7 +47,7 @@ module.exports = (env) => {
             new webpack.optimize.UglifyJsPlugin(),
             new AotPlugin({
                 tsConfigPath: './tsconfig.json',
-                entryModule: path.join(__dirname, 'src/app/app.browser.module#AppModule'),
+                entryModule: path.join(__dirname, 'Angular/app/app.browser.module#AppModule'),
                 exclude: ['./**/*.server.ts']
             })
         ])
@@ -56,11 +56,11 @@ module.exports = (env) => {
     // Configuration for server-side (prerendering) bundle suitable for running in Node
     const serverBundleConfig = merge(sharedConfig, {
         resolve: { mainFields: ['main'] },
-        entry: { 'main-server': './src/boot.server.ts' },
+        entry: { 'main-server': './Angular/boot.server.ts' },
         plugins: [
             new webpack.DllReferencePlugin({
                 context: __dirname,
-                manifest: require('./src/dist/vendor-manifest.json'),
+                manifest: require('./Angular/dist/vendor-manifest.json'),
                 sourceType: 'commonjs2',
                 name: './vendor'
             })
@@ -68,13 +68,13 @@ module.exports = (env) => {
             // Plugins that apply in production builds only
             new AotPlugin({
                 tsConfigPath: './tsconfig.json',
-                entryModule: path.join(__dirname, 'src/app/app.server.module#AppModule'),
+                entryModule: path.join(__dirname, 'Angular/app/app.server.module#AppModule'),
                 exclude: ['./**/*.browser.ts']
             })
         ]),
         output: {
             libraryTarget: 'commonjs',
-            path: path.join(__dirname, './src/dist')
+            path: path.join(__dirname, './Angular/dist')
         },
         target: 'node',
         devtool: 'inline-source-map'

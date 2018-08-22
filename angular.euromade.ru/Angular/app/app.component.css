@@ -1,0 +1,20 @@
+.page-aside {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.page-content {
+    margin-left: 70px;
+    min-height: 600px;
+}
+
+.app-footer {
+    margin-left: 70px;
+    text-align: center;
+}
+
+.app-footer-container {
+    display: inline-block;
+}

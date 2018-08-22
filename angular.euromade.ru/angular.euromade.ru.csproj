@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
@@ -17,18 +17,18 @@
 
   <ItemGroup>
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
-    <Content Remove="src\**" />
+    <Content Remove="Angular\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="src\app\header\header.component.ts" />
-    <None Remove="src\app\header\header.module.ts" />
-    <None Remove="src\app\header\main-header\main-header.component.ts" />
-    <None Remove="src\app\header\top-header\top-header.component.ts" />
+    <None Remove="Angular\app\header\header.component.ts" />
+    <None Remove="Angular\app\header\header.module.ts" />
+    <None Remove="Angular\app\header\main-header\main-header.component.ts" />
+    <None Remove="Angular\app\header\top-header\top-header.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\dist\" />
+    <Folder Include="Angular\app\routes\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,10 +36,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="src\app\header\header.component.ts" />
-    <TypeScriptCompile Include="src\app\header\header.module.ts" />
-    <TypeScriptCompile Include="src\app\header\main-header\main-header.component.ts" />
-    <TypeScriptCompile Include="src\app\header\top-header\top-header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\header\header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\header\header.module.ts" />
+    <TypeScriptCompile Include="Angular\app\header\main-header\main-header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\header\top-header\top-header.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
@@ -64,7 +64,7 @@
 
     <!-- Include the newly-built files in the publish output -->
     <ItemGroup>
-      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <DistFiles Include="wwwroot\dist\**; Angular\dist\**" />
       <ResolvedFileToPublish Include="@(DistFiles->'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
         <RelativePath>%(DistFiles.Identity)</RelativePath>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
