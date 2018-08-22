@@ -1,0 +1,16 @@
+﻿.about-info-container {
+    text-align: center;
+    position: relative;
+    left: -90px;
+    white-space: nowrap;
+}
+
+.about-info-element {
+    display: inline-block;
+}
+
+.about-info-element > article {
+    width: 300px;
+    text-align: left;
+    word-wrap: break-word;
+}

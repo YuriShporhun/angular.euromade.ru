@@ -2,10 +2,13 @@
     width: 100%;
     height: 43px;
     background-color: #333a42;
+    white-space: nowrap;
 }
 
 .header-element {
     display: inline-block;
     max-height: 43px;
     color: #fff;
+    overflow: hidden;
+    margin-top: 12px;
 }
