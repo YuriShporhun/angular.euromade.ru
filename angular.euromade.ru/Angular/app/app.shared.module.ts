@@ -4,13 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-import { HeaderModule } from './header/header.module';
-import { AsideModule } from './aside/aside.module';
-import { FooterModule } from './footer/footer.module';
-import { MainPageComponent } from './routes/main-page/main-page.component';
-import { RoutesModule } from './routes/routes.module';
-import { AboutComponent } from './routes/about/about.component';
+import { AppComponent } from './components/app/app.component';
+import { HeaderModule } from './components/header/header.module';
+import { AsideModule } from './components/aside/aside.module';
+import { FooterModule } from './components/footer/footer.module';
+import { MainPageComponent } from './components/routes/main-page/main-page.component';
+import { RoutesModule } from './components/routes/routes.module';
+import { AboutComponent } from './components/routes/about/about.component';
+import { ContactsComponent } from './components/routes/contacts/contacts.component';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { AboutComponent } from './routes/about/about.component';
             { path: '', redirectTo: 'main-page', pathMatch: 'full' },
             { path: 'main-page', component: MainPageComponent },
             { path: 'about', component: AboutComponent },
+            { path: 'contacts', component: ContactsComponent },
             { path: '**', redirectTo: 'main-page' }
         ])
     ]

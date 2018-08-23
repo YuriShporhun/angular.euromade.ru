@@ -1,0 +1,34 @@
+﻿.banner {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-container {
+    height: 550px;
+}
+
+.banner-container > figure {
+    margin: 0;
+}
+
+.banner-container > figure > figcaption {
+    position: relative;
+    top: -450px;
+    left: calc(50% - 250px);
+    font-family: 'Roboto',sans-serif;
+    font-size: 78px;
+    text-align: center;
+    width: 500px;
+    text-transform: uppercase;
+    color: #47cede;
+}
+
+.banner-container > figure > figcaption > b {
+    background: rgba(255,255,255,.85);
+}
+
+.banner-container > figure > figcaption > input[type='button'] {
+    font-size: 18px;
+}
+

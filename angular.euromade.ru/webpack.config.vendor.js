@@ -19,7 +19,8 @@ const nonTreeShakableModules = [
     'es6-promise',
     'es6-shim',
     'event-source-polyfill',
-    'normalize.css/normalize.css'
+    'normalize.css/normalize.css',
+    'font-awesome/css/font-awesome.css'
 ];
 const allModules = treeShakableModules.concat(nonTreeShakableModules);
 

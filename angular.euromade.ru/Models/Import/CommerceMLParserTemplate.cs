@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace angular.euromade.ru.Models.Import
 {
@@ -10,11 +12,11 @@ namespace angular.euromade.ru.Models.Import
     /// </remarks>
     public abstract class CommerceMLParserTemplate
     {
-        ICommerceMLSource commerceMLSource;
+        protected MemoryStream commerceMLStream;
 
         public CommerceMLParserTemplate(ICommerceMLSource commerceMLSource)
         {
-            this.commerceMLSource = commerceMLSource;
+            commerceMLStream = commerceMLSource.GetSource();
         }
 
         /// <summary>
@@ -23,16 +25,16 @@ namespace angular.euromade.ru.Models.Import
         /// <returns>Результат разбота CommerceML файла</returns>
         public CommerceMLImportResult Extract()
         {
-            IEnumerable<CatalogGroup> groups = ExtractGroups(commerceMLSource);
-            IEnumerable<CatalogProduct> products = ExtractProducts(commerceMLSource);
-            IEnumerable<CatalogProperty> properties = ExtractProperties(commerceMLSource);
+            IEnumerable<CatalogGroup> groups = ExtractGroups();
+            IEnumerable<CatalogProduct> products = ExtractProducts();
+            IEnumerable<CatalogProperty> properties = ExtractProperties();
 
             CommerceMLImportResult result = new CommerceMLImportResult(groups, products, properties);
             return result;
         }
 
-        protected abstract IEnumerable<CatalogGroup> ExtractGroups(ICommerceMLSource commerceMLSource);
-        protected abstract IEnumerable<CatalogProduct> ExtractProducts(ICommerceMLSource commerceMLSource);
-        protected abstract IEnumerable<CatalogProperty> ExtractProperties(ICommerceMLSource commerceMLSource); 
+        protected abstract IEnumerable<CatalogGroup> ExtractGroups();
+        protected abstract IEnumerable<CatalogProduct> ExtractProducts();
+        protected abstract IEnumerable<CatalogProperty> ExtractProperties(); 
     }
 }

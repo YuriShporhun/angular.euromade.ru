@@ -1,8 +1,9 @@
 ﻿.header-container {
-    width: 100%;
     height: 43px;
     background-color: #333a42;
     white-space: nowrap;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .header-element {
@@ -11,4 +12,16 @@
     color: #fff;
     overflow: hidden;
     margin-top: 12px;
+}
+
+.phone-container div {
+    float: left;
+}
+
+.store-header-info {
+    float: right;
+}
+
+.store-header-info div {
+    display: inline-block;
 }

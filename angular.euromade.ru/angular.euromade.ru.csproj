@@ -21,10 +21,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Angular\app\header\header.component.ts" />
-    <None Remove="Angular\app\header\header.module.ts" />
-    <None Remove="Angular\app\header\main-header\main-header.component.ts" />
-    <None Remove="Angular\app\header\top-header\top-header.component.ts" />
+    <None Remove="Angular\app\components\header\header.component.ts" />
+    <None Remove="Angular\app\components\header\header.module.ts" />
+    <None Remove="Angular\app\components\header\main-header\main-header.component.ts" />
+    <None Remove="Angular\app\components\header\top-header\top-header.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -32,13 +32,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <TypeScriptCompile Include="Angular\app\header\header.component.ts" />
-    <TypeScriptCompile Include="Angular\app\header\header.module.ts" />
-    <TypeScriptCompile Include="Angular\app\header\main-header\main-header.component.ts" />
-    <TypeScriptCompile Include="Angular\app\header\top-header\top-header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\components\header\header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\components\header\header.module.ts" />
+    <TypeScriptCompile Include="Angular\app\components\header\main-header\main-header.component.ts" />
+    <TypeScriptCompile Include="Angular\app\components\header\top-header\top-header.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Angular\admin\" />
+    <Folder Include="Angular\app\directives\" />
+    <Folder Include="Angular\app\pipes\" />
+    <Folder Include="Angular\app\services\" />
+    <Folder Include="Models\Repository\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
