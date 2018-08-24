@@ -12,6 +12,8 @@ import { MainPageComponent } from './components/routes/main-page/main-page.compo
 import { RoutesModule } from './components/routes/routes.module';
 import { AboutComponent } from './components/routes/about/about.component';
 import { ContactsComponent } from './components/routes/contacts/contacts.component';
+import { DeliveryComponent } from './components/routes/delivery/delivery.component';
+import { PaymentComponent } from './components/routes/payment/payment.component';
 
 @NgModule({
     declarations: [
@@ -30,6 +32,8 @@ import { ContactsComponent } from './components/routes/contacts/contacts.compone
             { path: 'main-page', component: MainPageComponent },
             { path: 'about', component: AboutComponent },
             { path: 'contacts', component: ContactsComponent },
+            { path: 'delivery', component: DeliveryComponent },
+            { path: 'payment', component: PaymentComponent },
             { path: '**', redirectTo: 'main-page' }
         ])
     ]
