@@ -4,6 +4,8 @@ import { AboutComponent } from "./about/about.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { DeliveryComponent } from "./delivery/delivery.component";
 import { PaymentComponent } from "./payment/payment.component";
+import { OrderComponent } from "./order/order.component";
+import { OrderModule } from "./order/order.module";
 
 @NgModule({
     declarations: [
@@ -21,7 +23,8 @@ import { PaymentComponent } from "./payment/payment.component";
         AboutComponent,
         ContactsComponent,
         DeliveryComponent,
-        PaymentComponent
+        PaymentComponent,
+        OrderModule
     ]
 })
 export class RoutesModule {

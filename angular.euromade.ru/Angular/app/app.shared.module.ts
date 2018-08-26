@@ -14,6 +14,7 @@ import { AboutComponent } from './components/routes/about/about.component';
 import { ContactsComponent } from './components/routes/contacts/contacts.component';
 import { DeliveryComponent } from './components/routes/delivery/delivery.component';
 import { PaymentComponent } from './components/routes/payment/payment.component';
+import { OrderComponent } from './components/routes/order/order.component';
 
 @NgModule({
     declarations: [
@@ -34,6 +35,7 @@ import { PaymentComponent } from './components/routes/payment/payment.component'
             { path: 'contacts', component: ContactsComponent },
             { path: 'delivery', component: DeliveryComponent },
             { path: 'payment', component: PaymentComponent },
+            { path: 'order', component: OrderComponent },
             { path: '**', redirectTo: 'main-page' }
         ])
     ]
