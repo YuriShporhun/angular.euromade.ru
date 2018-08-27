@@ -15,6 +15,7 @@ import { ContactsComponent } from './components/routes/contacts/contacts.compone
 import { DeliveryComponent } from './components/routes/delivery/delivery.component';
 import { PaymentComponent } from './components/routes/payment/payment.component';
 import { OrderComponent } from './components/routes/order/order.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [
@@ -28,6 +29,7 @@ import { OrderComponent } from './components/routes/order/order.component';
         CommonModule,
         HttpModule,
         FormsModule,
+        BrowserModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'main-page', pathMatch: 'full' },
             { path: 'main-page', component: MainPageComponent },

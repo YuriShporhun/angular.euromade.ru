@@ -1,10 +1,5 @@
 ﻿import { Component } from '@angular/core';
-
-enum OrderStage {
-    Contacts,
-    Delivery,
-    Payment
-}
+import { OrderStage } from './order-stage';
 
 @Component({
     selector: 'order',
@@ -12,6 +7,8 @@ enum OrderStage {
     styleUrls: ['./order.component.css']
 })
 export class OrderComponent {
+    OrderStage = OrderStage;
+
     private orderStage: OrderStage = OrderStage.Contacts;
 
 }

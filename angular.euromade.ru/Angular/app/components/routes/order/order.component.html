@@ -1,1 +1,13 @@
-﻿
+﻿<div [ngSwitch]="orderStage">
+    <div *ngSwitchCase="OrderStage.Contacts">
+        <contacts-form></contacts-form>
+    </div>
+    <div *ngSwitchCase="OrderStage.Delivery">
+        Доставка
+    </div>
+    <div *ngSwitchCase="OrderStage.Payment">
+        Оплата
+    </div>
+    <input type="button" value="Назад"/>
+    <input type="button" value="Продолжнить"/>
+</div>
