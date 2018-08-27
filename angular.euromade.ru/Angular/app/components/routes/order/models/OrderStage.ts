@@ -1,5 +1,6 @@
 ﻿export enum OrderStage {
     Contacts,
     Delivery,
-    Payment
+    Payment,
+    Done
 }

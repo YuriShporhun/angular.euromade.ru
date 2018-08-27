@@ -1,1 +1,14 @@
-﻿
+﻿<form (ngSubmit)="Submit()" #form="ngForm">
+    <input type="text" placeholder="Имя" ngModel name="firstName" #firstName="ngModel" />
+    <span>На это имя будут оформлены все документы</span>
+
+    <input type="text" placeholder="Фамилия" ngModel name="secondName" #secondName="ngModel" />
+
+    <input type="email" placeholder="E-mail" ngModel name="email" email #email="ngModel" />
+    <span>На этот почтовый ящик пришлем подробности заказа</span>
+
+    <input type="tel" placeholder="Телефон" ngModel name="phone" required #phone="ngModel" />
+    <span *ngIf="phone.invalid && submitted">
+        Необходимо заполнить
+    </span>
+</form>

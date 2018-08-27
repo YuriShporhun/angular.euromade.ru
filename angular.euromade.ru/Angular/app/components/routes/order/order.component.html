@@ -1,13 +1,24 @@
 ﻿<div [ngSwitch]="orderStage">
     <div *ngSwitchCase="OrderStage.Contacts">
-        <contacts-form></contacts-form>
+        <contacts-form 
+            [submitSubject]="submitSubject" 
+            (formValidated)="Next()">
+        </contacts-form>
     </div>
     <div *ngSwitchCase="OrderStage.Delivery">
-        Доставка
+        <delivery-form
+           [submitSubject]="submitSubject"
+           (formValidated)="Next()">
+        </delivery-form>
     </div>
     <div *ngSwitchCase="OrderStage.Payment">
-        Оплата
+        <payment-form
+            [submitSubject]="submitSubject"
+            (formValidated)="Next()">
+        </payment-form>
     </div>
-    <input type="button" value="Назад"/>
-    <input type="button" value="Продолжнить"/>
+</div>
+<div>
+    <input type="button" value="Назад" />
+    <input type="submit" value="Продолжить" (click)="Submit()" />
 </div>
