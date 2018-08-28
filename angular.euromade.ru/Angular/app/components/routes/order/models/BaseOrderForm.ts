@@ -19,5 +19,5 @@ export abstract class BaseOrderForm implements OnInit {
         this.submitSubject.subscribe(() => {
             this.form.ngSubmit.emit();
         });
-    }
+    } 
 }

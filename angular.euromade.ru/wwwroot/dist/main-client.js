@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "baf620f78a1688adb47b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "57c6aeec1972e513a0b7"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -3117,7 +3117,7 @@ module.exports = "<form (ngSubmit)=\"Submit()\" #form=\"ngForm\">\r\n    <input 
 /* 69 */
 /***/ (function(module, exports) {
 
-module.exports = "<form (ngSubmit)=\"Submit()\" #form=\"ngForm\">\r\n    2\r\n</form>\r\n";
+module.exports = "<form (ngSubmit)=\"Submit()\" #form=\"ngForm\">\r\n    <input type=\"text\" value=\"Город\" />\r\n    <input type=\"text\" value=\"Улица\" />\r\n    <input type=\"text\" value=\"Дом\" />\r\n    <input type=\"text\" value=\"Корпус\" />\r\n    <input type=\"text\" value=\"Квартира\" />\r\n</form>\r\n";
 
 /***/ }),
 /* 70 */

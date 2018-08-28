@@ -30,6 +30,7 @@ import { BrowserModule } from '@angular/platform-browser';
         HttpModule,
         FormsModule,
         BrowserModule,
+
         RouterModule.forRoot([
             { path: '', redirectTo: 'main-page', pathMatch: 'full' },
             { path: 'main-page', component: MainPageComponent },
