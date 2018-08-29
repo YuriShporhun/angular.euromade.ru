@@ -15,7 +15,8 @@ namespace angular.euromade.ru.Models.Import
         protected override IEnumerable<CatalogGroup> ExtractGroups()
         {
             XDocument xdoc = XDocument.Load(commerceMLStream);
-            foreach (XElement phoneElement in xdoc.Element("phones").Elements("phone"))
+            IEnumerable<XElement> xGroups = xdoc.Element("КоммерческаяИнформация").Elements("Классификатор").Elements("Группы");
+            foreach (XElement phoneElement in xGroups)
             {
                 XAttribute nameAttribute = phoneElement.Attribute("name");
                 XElement companyElement = phoneElement.Element("company");

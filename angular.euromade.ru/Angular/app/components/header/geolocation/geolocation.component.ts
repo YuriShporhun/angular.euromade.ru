@@ -1,4 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit, OnDestroy } from '@angular/core';
 import { GeolocationService } from '../../../services/geolocation.service';
 
 @Component({
@@ -6,7 +6,7 @@ import { GeolocationService } from '../../../services/geolocation.service';
     templateUrl: './geolocation.component.html',
     styleUrls: ['./geolocation.component.css']
 })
-export class GeolocationComponent implements OnInit {
+export class GeolocationComponent implements OnInit, OnDestroy {
 
     city: string = '';
     
@@ -16,5 +16,9 @@ export class GeolocationComponent implements OnInit {
         this.geoService.geoSubject.subscribe((city: string) => {
             this.city = city;
         });
+    }
+
+    ngOnDestroy() {
+        this.geoService.geoSubject.unsubscribe();
     }
 }

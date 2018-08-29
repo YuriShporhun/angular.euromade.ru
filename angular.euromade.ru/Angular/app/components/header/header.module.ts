@@ -4,6 +4,7 @@ import { HeaderComponent } from "./header.component";
 import { MainHeaderComponent } from "./main-header/main-header.component";
 import { MainMenu } from "./main-menu/main-menu.component";
 import { GeolocationComponent } from "./geolocation/geolocation.component";
+import { InfoButtonComponent } from "./info-button/info-button.component";
 
 @NgModule({
     declarations: [
@@ -11,7 +12,8 @@ import { GeolocationComponent } from "./geolocation/geolocation.component";
         MainHeaderComponent,
         HeaderComponent,
         MainMenu,
-        GeolocationComponent
+        GeolocationComponent,
+        InfoButtonComponent
     ],
     imports: [
 
