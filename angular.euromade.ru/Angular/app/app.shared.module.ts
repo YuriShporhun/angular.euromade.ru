@@ -16,6 +16,7 @@ import { DeliveryComponent } from './components/routes/delivery/delivery.compone
 import { PaymentComponent } from './components/routes/payment/payment.component';
 import { OrderComponent } from './components/routes/order/order.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { GeolocationService } from './services/geolocation.service';
 
 @NgModule({
     declarations: [
@@ -41,6 +42,9 @@ import { BrowserModule } from '@angular/platform-browser';
             { path: 'order', component: OrderComponent },
             { path: '**', redirectTo: 'main-page' }
         ])
+    ],
+    providers: [
+        GeolocationService
     ]
 })
 export class AppModuleShared {
