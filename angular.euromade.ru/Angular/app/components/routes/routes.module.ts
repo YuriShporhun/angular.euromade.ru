@@ -6,6 +6,7 @@ import { DeliveryComponent } from "./delivery/delivery.component";
 import { PaymentComponent } from "./payment/payment.component";
 import { OrderComponent } from "./order/order.component";
 import { OrderModule } from "./order/order.module";
+import { ShowcaseComponent } from "./main-page/showcase/showcase.component";
 
 @NgModule({
     declarations: [
@@ -13,7 +14,8 @@ import { OrderModule } from "./order/order.module";
         AboutComponent,
         ContactsComponent,
         DeliveryComponent,
-        PaymentComponent
+        PaymentComponent,
+        ShowcaseComponent
     ],
     imports: [
 
