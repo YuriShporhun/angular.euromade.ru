@@ -7,6 +7,8 @@ import { PaymentComponent } from "./payment/payment.component";
 import { OrderComponent } from "./order/order.component";
 import { OrderModule } from "./order/order.module";
 import { ShowcaseComponent } from "./main-page/showcase/showcase.component";
+import { SharedComponentsModule } from "../shared/shared.module";
+import { RoundButtonComponent } from "../shared/round-button/round-button.component";
 
 @NgModule({
     declarations: [
@@ -18,7 +20,7 @@ import { ShowcaseComponent } from "./main-page/showcase/showcase.component";
         ShowcaseComponent
     ],
     imports: [
-
+        SharedComponentsModule
     ],
     exports: [
         MainPageComponent,
