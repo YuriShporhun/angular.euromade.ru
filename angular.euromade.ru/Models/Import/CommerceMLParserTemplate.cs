@@ -14,9 +14,9 @@ namespace angular.euromade.ru.Models.Import
     {
         protected MemoryStream commerceMLStream;
 
-        public CommerceMLParserTemplate(ICommerceMLSource commerceMLSource)
+        protected CommerceMLParserTemplate(ICommerceMLSource commerceMLSource)
         {
-            commerceMLStream = commerceMLSource.GetSource();
+            commerceMLStream = commerceMLSource?.GetSource();
         }
 
         /// <summary>

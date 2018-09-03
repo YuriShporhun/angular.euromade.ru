@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "angular.euromade.ru", "angu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransactionObjects", "DataTransactionObjects\DataTransactionObjects.csproj", "{D803F7E3-7562-47C9-BA3F-538C99002027}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.angular.euromade.ru", "NUnit.angular.euromade.ru\NUnit.angular.euromade.ru.csproj", "{5F4C6185-1B2F-497E-BE1B-25BE616F4C2C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.angular.euromade.ru", "NUnit.angular.euromade.ru\NUnit.angular.euromade.ru.csproj", "{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{D803F7E3-7562-47C9-BA3F-538C99002027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D803F7E3-7562-47C9-BA3F-538C99002027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D803F7E3-7562-47C9-BA3F-538C99002027}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F4C6185-1B2F-497E-BE1B-25BE616F4C2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F4C6185-1B2F-497E-BE1B-25BE616F4C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F4C6185-1B2F-497E-BE1B-25BE616F4C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F4C6185-1B2F-497E-BE1B-25BE616F4C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

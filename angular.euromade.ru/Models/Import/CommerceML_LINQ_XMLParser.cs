@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Xml.Linq;
 
 namespace angular.euromade.ru.Models.Import
@@ -10,7 +9,12 @@ namespace angular.euromade.ru.Models.Import
     /// </summary>
     public class CommerceML_LINQ_XMLParser : CommerceMLParserTemplate
     {
-        public CommerceML_LINQ_XMLParser(ICommerceMLSource commerceMLSource): base(commerceMLSource) { }
+        /// <exception cref="System.ArgumentNullException">Если commerceMLSource = null</exception>
+        /// <param name="commerceMLSource">Источник данных формата CommerceML</param>
+        public CommerceML_LINQ_XMLParser(ICommerceMLSource commerceMLSource): base(commerceMLSource)
+        {
+            if(commerceMLSource == null) throw new ArgumentNullException(nameof(commerceMLSource));
+        }
 
         private IEnumerable<CatalogGroup> ParseGroups(IEnumerable<XElement> elements)
         {
