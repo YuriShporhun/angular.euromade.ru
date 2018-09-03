@@ -1,7 +1,3 @@
-﻿/**
- * Компонент, отвечающий за главное меню с категориями
- */
-
 import { Component } from '@angular/core';
 
 @Component({
