@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,7 +42,6 @@
     <Folder Include="Angular\app\components\routes\main-page\recommendations\" />
     <Folder Include="Angular\app\directives\" />
     <Folder Include="Angular\app\pipes\" />
-    <Folder Include="Models\Repository\" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
