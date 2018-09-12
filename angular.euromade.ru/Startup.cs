@@ -23,7 +23,9 @@ namespace angular.euromade.ru
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<EuromadeDbContext>(options => options.UseSqlServer("dummy"));
+            services.AddDbContext<EuromadeDbContext>(options => 
+                options.UseSqlServer(Configuration.GetConnectionString("default")));
+
             services.AddMvc();
         }
 

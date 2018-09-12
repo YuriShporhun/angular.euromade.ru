@@ -38,7 +38,6 @@
 
   <ItemGroup>
     <Folder Include="Angular\admin\" />
-    <Folder Include="Angular\app\components\routes\main-page\sections\" />
     <Folder Include="Angular\app\components\routes\main-page\recommendations\" />
     <Folder Include="Angular\app\directives\" />
     <Folder Include="Angular\app\pipes\" />
