@@ -4,11 +4,11 @@ import { AboutComponent } from "./about/about.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { DeliveryComponent } from "./delivery/delivery.component";
 import { PaymentComponent } from "./payment/payment.component";
-import { OrderComponent } from "./order/order.component";
 import { OrderModule } from "./order/order.module";
 import { ShowcaseComponent } from "./main-page/showcase/showcase.component";
 import { SharedComponentsModule } from "../shared/shared.module";
-import { RoundButtonComponent } from "../shared/round-button/round-button.component";
+import { SectionsComponent } from "./main-page/sections/sections.component";
+import { RecommendationsComponent } from "./main-page/recommendations/recommendations.component";
 
 @NgModule({
     declarations: [
@@ -17,7 +17,9 @@ import { RoundButtonComponent } from "../shared/round-button/round-button.compon
         ContactsComponent,
         DeliveryComponent,
         PaymentComponent,
-        ShowcaseComponent
+        ShowcaseComponent,
+        SectionsComponent,
+        RecommendationsComponent
     ],
     imports: [
         SharedComponentsModule
