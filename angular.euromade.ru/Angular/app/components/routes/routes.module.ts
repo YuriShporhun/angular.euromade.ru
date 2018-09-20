@@ -9,6 +9,8 @@ import { ShowcaseComponent } from "./main-page/showcase/showcase.component";
 import { SharedComponentsModule } from "../shared/shared.module";
 import { SectionsComponent } from "./main-page/sections/sections.component";
 import { RecommendationsComponent } from "./main-page/recommendations/recommendations.component";
+import { NewsComponent } from "./main-page/news/news.component";
+import { ArticlesComponent } from "./main-page/articles/articles.component";
 
 @NgModule({
     declarations: [
@@ -19,7 +21,9 @@ import { RecommendationsComponent } from "./main-page/recommendations/recommenda
         PaymentComponent,
         ShowcaseComponent,
         SectionsComponent,
-        RecommendationsComponent
+        RecommendationsComponent,
+        NewsComponent,
+        ArticlesComponent
     ],
     imports: [
         SharedComponentsModule
