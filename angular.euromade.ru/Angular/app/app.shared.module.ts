@@ -17,7 +17,6 @@ import { PaymentComponent } from './components/routes/payment/payment.component'
 import { OrderComponent } from './components/routes/order/order.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { GeolocationService } from './services/geolocation.service';
-import { RoundButtonComponent } from './components/shared/round-button/round-button.component';
 
 @NgModule({
     declarations: [

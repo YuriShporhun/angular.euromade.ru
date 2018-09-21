@@ -25,16 +25,16 @@ namespace angular.euromade.ru.Models.Import
         /// <returns>Результат разбота CommerceML файла</returns>
         public CommerceMLImportResult Extract()
         {
-            IEnumerable<CatalogGroup> groups = ExtractGroups();
+            IEnumerable<ClassifierGroup> groups = ExtractGroups();
             IEnumerable<CatalogProduct> products = ExtractProducts();
-            IEnumerable<CatalogProperty> properties = ExtractProperties();
+            IEnumerable<ClassifierProperty> properties = ExtractProperties();
 
             CommerceMLImportResult result = new CommerceMLImportResult(groups, products, properties);
             return result;
         }
 
-        protected abstract IEnumerable<CatalogGroup> ExtractGroups();
+        protected abstract IEnumerable<ClassifierGroup> ExtractGroups();
         protected abstract IEnumerable<CatalogProduct> ExtractProducts();
-        protected abstract IEnumerable<CatalogProperty> ExtractProperties(); 
+        protected abstract IEnumerable<ClassifierProperty> ExtractProperties(); 
     }
 }

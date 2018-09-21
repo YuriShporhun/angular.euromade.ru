@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "angular.euromade.ru", "angular.euromade.ru\angular.euromade.ru.csproj", "{C078B6BA-AEE4-4FE0-8065-7116E8E63BC7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataTransactionObjects", "DataTransactionObjects\DataTransactionObjects.csproj", "{D803F7E3-7562-47C9-BA3F-538C99002027}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUnit.angular.euromade.ru", "NUnit.angular.euromade.ru\NUnit.angular.euromade.ru.csproj", "{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit.angular.euromade.ru", "NUnit.angular.euromade.ru\NUnit.angular.euromade.ru.csproj", "{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "repository.euromade.ru", "repository.euromade.ru\repository.euromade.ru.csproj", "{3624F0E1-5933-4CF1-86A5-4C63EF8F09EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{C078B6BA-AEE4-4FE0-8065-7116E8E63BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C078B6BA-AEE4-4FE0-8065-7116E8E63BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C078B6BA-AEE4-4FE0-8065-7116E8E63BC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D803F7E3-7562-47C9-BA3F-538C99002027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D803F7E3-7562-47C9-BA3F-538C99002027}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D803F7E3-7562-47C9-BA3F-538C99002027}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D803F7E3-7562-47C9-BA3F-538C99002027}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F07A4FF-C0AD-42E7-9BFA-110EACFA169E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3624F0E1-5933-4CF1-86A5-4C63EF8F09EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3624F0E1-5933-4CF1-86A5-4C63EF8F09EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3624F0E1-5933-4CF1-86A5-4C63EF8F09EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3624F0E1-5933-4CF1-86A5-4C63EF8F09EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

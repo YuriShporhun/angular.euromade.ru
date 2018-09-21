@@ -1,9 +1,9 @@
 ﻿namespace angular.euromade.ru.Models.Import
 {
     /// <summary>
-    /// Представляет собой свойство каталога 1С
+    /// Представляет собой свойство классификатора CommerceML
     /// </summary>
-    public class CatalogProperty
+    public class ClassifierProperty
     {
         /// <summary>
         /// Идектификатор свойства 1С представляет собой GUID

@@ -16,24 +16,24 @@ namespace angular.euromade.ru.Models.Import
             if(commerceMLSource == null) throw new ArgumentNullException(nameof(commerceMLSource));
         }
 
-        private IEnumerable<CatalogGroup> ParseGroups(IEnumerable<XElement> elements)
+        private IEnumerable<ClassifierGroup> ParseGroups(IEnumerable<XElement> elements)
         {
             foreach (XElement xgroup in elements)
             {
                 string id = xgroup.Element("ИД").Value;
                 string name = xgroup.Element("price").Value;
                 IEnumerable<XElement> nestedGroups = xgroup.Elements("Группы");
-                IEnumerable<CatalogGroup> childs = null;
+                IEnumerable<ClassifierGroup> childs = null;
                 if(nestedGroups != null)
                 {
                     childs = ParseGroups(nestedGroups);
                 }
 
-                yield return new CatalogGroup(id, name, childs, null);
+                yield return new ClassifierGroup(id, name, childs, null);
             }
         }
 
-        protected override IEnumerable<CatalogGroup> ExtractGroups()
+        protected override IEnumerable<ClassifierGroup> ExtractGroups()
         {
             XDocument xdoc = XDocument.Load(commerceMLStream);
             IEnumerable<XElement> xGroups = xdoc.Element("КоммерческаяИнформация").Elements("Классификатор").Elements("Группы");
@@ -45,7 +45,7 @@ namespace angular.euromade.ru.Models.Import
             throw new NotImplementedException();
         }
 
-        protected override IEnumerable<CatalogProperty> ExtractProperties()
+        protected override IEnumerable<ClassifierProperty> ExtractProperties()
         {
             throw new NotImplementedException();
         }

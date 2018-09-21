@@ -9,7 +9,7 @@ namespace angular.euromade.ru.Models.Import
     /// {Constant object}
     /// Информация по группам в CommerceML находится в КоммерческаяИнформация->Классификатор->Группы
     /// </remarks>
-    public class CatalogGroup
+    public class ClassifierGroup
     {
         /// <summary>
         /// Идентификатор группы 1C представляет собой GUID
@@ -24,7 +24,7 @@ namespace angular.euromade.ru.Models.Import
         /// <summary>
         /// Список вложенных групп
         /// </summary>
-        IEnumerable<CatalogGroup> InnerGroups { get; } = new List<CatalogGroup>();
+        IEnumerable<ClassifierGroup> InnerGroups { get; } = new List<ClassifierGroup>();
 
         /// <summary>
         /// Список фильтров
@@ -41,7 +41,7 @@ namespace angular.euromade.ru.Models.Import
         /// <param name="Name">Наименование группы</param>
         /// <param name="InnerGroups">Список вложенных групп</param>
         /// <param name="Filters">Список фильтров</param>
-        public CatalogGroup(string Id, string Name, IEnumerable<CatalogGroup> InnerGroups, IEnumerable<string> Filters)
+        public ClassifierGroup(string Id, string Name, IEnumerable<ClassifierGroup> InnerGroups, IEnumerable<string> Filters)
         {
             this.Id = Id;
             this.Name = Name;

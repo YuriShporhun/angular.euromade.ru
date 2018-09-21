@@ -10,7 +10,7 @@ namespace angular.euromade.ru.Models.Import
         /// <summary>
         /// Импортированные групы каталога
         /// </summary>
-        IEnumerable<CatalogGroup> Groups { get; }
+        IEnumerable<ClassifierGroup> Groups { get; }
 
         /// <summary>
         /// Импортированные товары
@@ -20,7 +20,7 @@ namespace angular.euromade.ru.Models.Import
         /// <summary>
         /// Импортированные свойства
         /// </summary>
-        IEnumerable<CatalogProperty> Properties { get; }
+        IEnumerable<ClassifierProperty> Properties { get; }
 
         /// <summary>
         /// Создает объект результата парсинга файла в формате CommerceML
@@ -29,9 +29,9 @@ namespace angular.euromade.ru.Models.Import
         /// <param name="Products">Импортированные товары</param>
         /// <param name="Properties">Импортированные свойства</param>
         public CommerceMLImportResult(
-            IEnumerable<CatalogGroup> Groups, 
+            IEnumerable<ClassifierGroup> Groups, 
             IEnumerable<CatalogProduct> Products, 
-            IEnumerable<CatalogProperty> Properties)
+            IEnumerable<ClassifierProperty> Properties)
         {
             this.Groups = Groups;
             this.Products = Products;
